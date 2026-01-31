@@ -43,7 +43,7 @@ while True:
             2
         )
 
-    # --- Profile faces (left) ---
+    # --- Left profile ---
     profiles = face_profile.detectMultiScale(
         gray,
         scaleFactor=1.3,
@@ -62,7 +62,7 @@ while True:
             2
         )
 
-    # --- Profile faces (right) using flip ---
+    # --- Right profile
     gray_flipped = cv2.flip(gray, 1)
     profiles_flipped = face_profile.detectMultiScale(
         gray_flipped,
