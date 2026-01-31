@@ -115,9 +115,7 @@ while True:
     cv2.imshow("Frontal + Side Face Detection", frame)
 
     if cv2.waitKey(1) & 0xFF == ord("q"):
-        break
-
-    
+        break   
 
 cap.release()
 cv2.destroyAllWindows()
